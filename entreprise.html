@@ -1,0 +1,303 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service SA et frères - Vente de Produits Divers (Mali)</title>
+    <!-- Chargement de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuration de la police Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Gris très clair */
+        }
+        /* Style personnalisé pour les cartes (facultatif mais stylisé) */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+<div class="space-x-4 hidden md:flex">
+    <a href="#produits" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Nos Produits</a>
+    
+    <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">FAQ / Aide</a>
+    
+    <a href="#a-propos" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Notre Histoire</a>
+    <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Contact</a>
+</div>
+
+    <!-- En-tête/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-gray-900 tracking-tighter">
+                SERVICE SA ET FRÈRES
+            </a>
+            <div class="space-x-4 hidden md:flex">
+    <a href="#produits" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Nos Produits</a>
+    
+    <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">FAQ / Aide</a>
+    
+    <a href="#a-propos" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Notre Histoire</a>
+    <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Contact</a>
+</div>
+
+            <!-- Liens de navigation pour mobile et desktop -->
+            <div class="space-x-4 hidden md:flex">
+                <a href="#produits" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Nos Produits</a>
+                <a href="#a-propos" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Notre Histoire</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Contact</a>
+            </div>
+            <!-- Bouton de menu (simplifié pour un menu caché simple sur mobile) -->
+            <button class="md:hidden p-2 text-gray-600 hover:text-indigo-600 rounded-md">
+                <!-- Icône SVG d'un menu hamburger (lucide-react: menu) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Section Principale (Héros) -->
+    <section class="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden" style="max-height: 80vh;">
+        <!-- Image de fond (Placeholder) -->
+        <div class="absolute inset-0">
+            <img src="https://placehold.co/1200x800/1a2a40/ffffff?text=Bienvenue+chez+Service+SA+et+fr%C3%A8res" alt="[Image de divers produits (gâteaux, téléphone, PC) en arrière-plan flou]" class="w-full h-full object-cover opacity-60">
+        </div>
+        <!-- Contenu central -->
+        <div class="relative z-10 text-center p-6 bg-black bg-opacity-40 rounded-xl max-w-lg mx-4">
+            <h1 class="text-5xl sm:text-7xl font-bold text-white mb-4 leading-tight">
+                Service SA et frères
+            </h1>
+            <p class="text-xl sm:text-3xl text-indigo-300 font-light mb-8">
+                Votre Spécialiste en Gâteaux, Électronique, PC et Téléphones au Mali.
+            </p>
+            <a href="#produits" class="inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105">
+                Découvrir nos Produits
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">
+        Notre Sélection de Produits
+    </h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="Gataux.jpeg" alt="[Image de Gataux à la noix de coco]" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-1">Pâtisseries & Gâteaux</h3>
+                <p class="text-sm text-gray-500 mb-2">Merveilles à la Noix de Coco et Spécialités</p>
+                <p class="text-lg font-bold text-indigo-600">Prix : 5000 XOF et plus</p>
+            </div>
+        </div>
+
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="Watch.jpg" alt="[Image d'une montre électronique connectée]" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-1">Montres Électroniques</h3>
+                <p class="text-sm text-gray-500 mb-2">Gadgets & Accessoires</p>
+                <p class="text-lg font-bold text-indigo-600">À partir de 15000 XOF</p>
+            </div>
+        </div>
+
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="Ordinateur.jpg" alt="[Image d'un ordinateur portable moderne]" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-1">Ordinateurs Portables et de Bureau</h3>
+                <p class="text-sm text-gray-500 mb-2">Informatique</p>
+                <p class="text-lg font-bold text-indigo-600">Sur Devis (À partir de 150000 XOF)</p>
+            </div>
+        </div>
+
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src=" Smart.jpg" alt="[Image d'un smartphone de dernière génération]" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-1">Téléphones Mobiles</h3>
+                <p class="text-sm text-gray-500 mb-2">Communication & Mobilité</p>
+                <p class="text-lg font-bold text-indigo-600">Dès 30000 XOF</p>
+            </div>
+        </div>
+
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="placeholder-electro.png" alt="[Image d'appareils électroniques divers]" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-1">Appareils Électroménagers</h3>
+                <p class="text-sm text-gray-500 mb-2">Maison & Cuisine</p>
+                <p class="text-lg font-bold text-indigo-600">Consulter l'équipe</p>
+            </div>
+        </div>
+
+        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="Huil.jpg" alt="[Image de produits divers]" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-1">Autres Produits Divers</h3>
+                <p class="text-sm text-gray-500 mb-2">Général</p>
+                <p class="text-lg font-bold text-indigo-600">Variable</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="produits" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">
+            Notre Sélection de Produits
+        </h2>
+        
+        <!-- Grille des Produits (Responsive) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Carte Produit 1: Gâteaux (Mise à jour avec l'image fournie) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="Gataux.jpeg" alt="[Image de Gataux à la noix de coco]" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1">Pâtisseries & Gâteaux</h3>
+                    <p class="text-sm text-gray-500">Merveilles à la Noix de Coco et Spécialités</p>
+                </div>
+            </div>
+
+            <!-- Carte Produit 2: Montres Électroniques -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="Watch.jpg" alt="[Image d'une montre électronique connectée]" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1">Montres Électroniques</h3>
+                    <p class="text-sm text-gray-500">Gadgets & Accessoires</p>
+                </div>
+            </div>
+
+            <!-- Carte Produit 3: PC -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="Ordinateur.jpg" alt="[Image d'un ordinateur portable moderne]" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1">Ordinateurs Portables et de Bureau</h3>
+                    <p class="text-sm text-gray-500">Informatique</p>
+                </div>
+            </div>
+
+            <!-- Carte Produit 4: Téléphones -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src=" Smart.jpg" alt="[Image d'un smartphone de dernière génération]" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1">Téléphones Mobiles</h3>
+                    <p class="text-sm text-gray-500">Communication & Mobilité</p>
+                </div>
+            </div>
+
+            <!-- Carte Produit 5: Autres Électroniques -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <video src="watch2.mp3" alt="[Image d'appareils électroniques divers]" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1">Appareils Électroménagers</h3>
+                    <p class="text-sm text-gray-500">Maison & Cuisine</p>
+                </div>
+            </div>
+
+            <!-- Carte Produit 6: Divers -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="Huil.jpg" alt="[Image de produits divers]" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1">Autres Produits Divers</h3>
+                    <p class="text-sm text-gray-500">Général</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Notre Histoire/À Propos -->
+    <section id="a-propos" class="bg-indigo-50 py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-6">
+                Notre Histoire
+            </h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <!-- Image d'illustration de la boutique -->
+                <div class="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 mb-6 md:mb-0">
+                    <img src="logo.jpg" alt="[Logo ou image de la boutique Service SA et frères]" class="w-full h-full object-cover rounded-full border-4 border-white shadow-xl">
+                </div>
+                <!-- Texte de présentation -->
+                <div class="text-left">
+                    <p class="text-lg text-gray-600 mb-4">
+                        Bienvenue chez **Service SA et frères** ! Basée à **Niamakoro, Bamako (BKO), Mali**, notre entreprise a été fondée avec la mission d'offrir une diversité de produits de qualité à notre communauté.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Que vous cherchiez un gâteau artisanal pour une fête, le dernier téléphone portable, un PC performant ou une montre électronique, nous nous engageons à vous fournir des articles fiables et un service client exceptionnel. Votre satisfaction est notre priorité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-16 md:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-6">
+            Contactez-nous
+        </h2>
+        <p class="text-xl text-gray-600 mb-10">
+            Nous sommes à votre disposition pour toute commande, question ou collaboration.
+        </p>
+        
+        <div class="space-y-6 text-xl mb-12">
+            <!-- Adresse -->
+            <p class="flex items-center justify-center space-x-3 text-gray-800">
+                <!-- Icône SVG Location (lucide-react: map-pin) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-600"><path d="M12 21.7c-3.1-3.6-5-6.5-5-9.2a5 5 0 0 1 10 0c0 2.7-1.9 5.6-5 9.2z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>**Adresse :** Niamakoro, BKO, Mali</span>
+            </p>
+            <!-- Téléphones -->
+            <p class="flex items-center justify-center space-x-3 text-gray-800">
+                <!-- Icône SVG Phone (lucide-react: phone) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-600"><path d="M22 16.9v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.9z"></path></svg>
+                <span>**Téléphones :** +223 77 10 35 34 / +223 62 81 61 93</span>
+            </p>
+            <!-- Email -->
+            <p class="flex items-center justify-center space-x-3 text-gray-800">
+                <!-- Icône SVG Mail (lucide-react: mail) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-600"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <span>**Email :** Servicesaetfreres02@gmail.com</span>
+            </p>
+        </div>
+
+        <a href="mailto:Servicesaetfreres02@gmail.com" class="inline-block px-10 py-4 bg-gray-900 text-white font-semibold text-lg rounded-lg shadow-xl hover:bg-indigo-600 transition duration-300 ease-in-out transform hover:scale-105">
+            Écrivez-nous un Email
+        </a>
+
+        <!-- Liens sociaux (laissés comme placeholders par défaut) -->
+        <div class="mt-12 flex justify-center space-x-6">
+            <!-- Facebook -->
+            <a href="#" target="_blank" class="text-gray-500 hover:text-blue-600 transition duration-300 transform hover:scale-110" aria-label="Facebook">
+                <!-- Icône SVG Facebook (lucide-react: facebook) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" target="_blank" class="text-gray-500 hover:text-pink-600 transition duration-300 transform hover:scale-110" aria-label="Instagram">
+                <!-- Icône SVG Instagram (lucide-react: instagram) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <!-- WhatsApp (Lien confirmé) -->
+            <a href="https://wa.me/22377103534" target="_blank" class="text-gray-500 hover:text-green-500 transition duration-300 transform hover:scale-110" aria-label="WhatsApp">
+                <!-- Icône SVG Message Circle (simulant WhatsApp) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A10.1 10.1 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12c0 2 .7 4 1.9 5.6L2 22l4.6-1.1z"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 Service SA et frères. Tous droits réservés.</p>
+            <p class="mt-1 text-gray-400">Niamakoro, BKO, Mali. Votre partenaire pour les produits de qualité.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
